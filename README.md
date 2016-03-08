@@ -24,7 +24,7 @@ You can also save the user names in a file lets say users.txt and get their rank
 
     python getRanks.py < users.txt 
 
-Check the below screenshot for the output 
+Check the below screenshot for the output:  
 ![screenshot 2][2]
 
 
