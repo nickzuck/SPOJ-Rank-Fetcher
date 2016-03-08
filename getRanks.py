@@ -26,16 +26,12 @@ class Spoj:
         data = self.data 
         searched_word ="World Rank"
         soup = BeautifulSoup(data[name], "html.parser")
-        print soup
+        #print soup
+        results = soup.body.find_all(string=re.compile('.*{0}.*'.format(searched_word)), recursive=True)
+        print results
+        for content in results : 
+            print content
         
-
-    def fetchRank(self, html):
-        word = "World Rank"
-        # results = soup.body.find_all(string = re.compile)
-            
-
-    
-
 
 
 if __name__ == '__main__':
